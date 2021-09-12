@@ -1,5 +1,5 @@
 body {
-  background-color: #111111;
+  background-color: #000000;
   font-family: Courier, monospace;
   font-size: 1em;
   color: #eeeeee;
@@ -15,7 +15,7 @@ h2 {
 
 .vcard {
   display: flex;
-  background-color: #111111;
+  background-color: #000000;
   max-width: 768px;
   max-height: 480px;
   position: relative;
@@ -54,6 +54,11 @@ h2 {
 
 .link:hover {
   background-color: #ffffff;
+  color: #000000;
+}
+
+.link:active {
+  color: #000000;
 }
 
 @media screen and (max-width: 768px) {
