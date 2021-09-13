@@ -3,7 +3,7 @@ import "../main.css"
 
 export default function Home() {
   return (
-    <div className="vcard">
+    <main className="vcard">
       <div className="details">
         <h1 className="n">
           <span className="given-name">Rosaline</span>{" "}
@@ -12,10 +12,10 @@ export default function Home() {
         </h1>
         <h2 className="category">Software Engineer</h2>
         <a className="email" href="mailto:rose@rosalinekarr.com">
-          rose@rosalinekarr.com
+          Email
         </a>
-        <a className="tel" href="tel:+14233561413">
-          (423) 356-1413
+        <a href="/talks">
+          Talks
         </a>
         <a href="https://github.com/rosalinekarr">
           GitHub
@@ -28,6 +28,6 @@ export default function Home() {
         </a>
       </div>
       <img className="photo" src="rose.png" alt="Rose" />
-    </div>
+    </main>
   )
 }

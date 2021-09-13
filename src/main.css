@@ -13,14 +13,12 @@ h2 {
   font-size: 1.4em;
 }
 
-.vcard {
+main {
   display: flex;
   background-color: #000000;
   max-width: 768px;
-  max-height: 480px;
-  position: relative;
-  top: 50vh;
-  margin: -200px auto;
+  min-height: 480px;
+  margin: 1em auto;
   border-color: #eeeeee;
   border-width: 1em;
   border-style: solid;
@@ -30,7 +28,7 @@ h2 {
 
 .details {
   display: block;
-  margin: 1em;
+  padding: 1em;
   flex: 1;
 }
 
@@ -40,6 +38,22 @@ h2 {
   height: 400px;
   align-self: flex-end;
   flex: none;
+}
+
+.talks {
+  padding: 1em;
+  flex-wrap: wrap;
+}
+
+.talk {
+  display: flex;
+  margin: none;
+  align-items: center;
+  flex: 1;
+}
+
+.talk-preview {
+  margin-right: 1em;
 }
 
 a {
