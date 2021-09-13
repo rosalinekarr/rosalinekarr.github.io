@@ -1,39 +1,33 @@
 import React from "react"
-import * as homeStyles from "./home.module.css"
+import "../main.css"
 
 export default function Home() {
   return (
-    <div class={`vcard ${homeStyles.vcard}`}>
-      <img class={`photo ${homeStyles.photo}`} src="rose.png" alt="Rose" />
-      <div class={homeStyles.details}>
-        <h1 class="n">
-          <span class="given-name">Rosaline</span>{" "}
-          <span class="additional-name">Annabelle</span>{" "}
-          <span class="family-name">Karr</span>
+    <div className="vcard">
+      <div className="details">
+        <h1 className="n">
+          <span className="given-name">Rosaline</span>{" "}
+          <span className="additional-name">Annabelle</span>{" "}
+          <span className="family-name">Karr</span>
         </h1>
-        <h2 class="category">Software Engineer</h2>
-        <a
-          class={`email ${homeStyles.link}`}
-          href="mailto:rose@rosalinekarr.com"
-        >
+        <h2 className="category">Software Engineer</h2>
+        <a className="email" href="mailto:rose@rosalinekarr.com">
           rose@rosalinekarr.com
         </a>
-        <a class={`tel ${homeStyles.link}`} href="tel:+14233561413">
+        <a className="tel" href="tel:+14233561413">
           (423) 356-1413
         </a>
-        <a class={homeStyles.link} href="https://github.com/rosalinekarr">
+        <a href="https://github.com/rosalinekarr">
           GitHub
         </a>
-        <a class={homeStyles.link} href="https://twitter.com/rosalinekarr">
+        <a href="https://twitter.com/rosalinekarr">
           Twitter
         </a>
-        <a
-          class={homeStyles.link}
-          href="https://www.linkedin.com/in/rosalinekarr/"
-        >
+        <a href="https://www.linkedin.com/in/rosalinekarr/">
           LinkedIn
         </a>
       </div>
+      <img className="photo" src="rose.png" alt="Rose" />
     </div>
   )
 }

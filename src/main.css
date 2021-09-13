@@ -1,0 +1,67 @@
+body {
+  background-color: #000000;
+  font-family: Courier, monospace;
+  font-size: 1em;
+  color: #eeeeee;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+.vcard {
+  display: flex;
+  background-color: #000000;
+  max-width: 768px;
+  max-height: 480px;
+  position: relative;
+  top: 50vh;
+  margin: -200px auto;
+  border-color: #eeeeee;
+  border-width: 1em;
+  border-style: solid;
+  align-content: space-between;
+  box-sizing: border-box;
+}
+
+.details {
+  display: block;
+  margin: 1em;
+  flex: 1;
+}
+
+.photo {
+  display: block;
+  width: 325px;
+  height: 400px;
+  align-self: flex-end;
+  flex: none;
+}
+
+a {
+  display: inline-block;
+  background-color: #eeeeee;
+  margin: 0.5em;
+  padding: 1em;
+  text-decoration: none;
+  color: #111111;
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+a:active {
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .photo {
+    display: none;
+  }
+}
