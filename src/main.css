@@ -50,10 +50,12 @@ main {
   margin: none;
   align-items: center;
   flex: 1;
+  flex-direction: row;
 }
 
 .talk-preview {
   margin-right: 1em;
+  margin-bottom: 0;
 }
 
 a {
@@ -75,6 +77,15 @@ a:active {
 }
 
 @media screen and (max-width: 768px) {
+  .talk {
+    flex-direction: column;
+  }
+
+  .talk-preview {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
   .photo {
     display: none;
   }
