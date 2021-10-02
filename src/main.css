@@ -1,8 +1,28 @@
-body {
+html, body, main {
   background-color: #000000;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
   font-family: Courier, monospace;
   font-size: 1em;
   color: #eeeeee;
+}
+
+.vcard, .talks {
+  display: flex;
+  max-width: 768px;
+  margin: 1em;
+  border-color: #eeeeee;
+  border-width: 1em;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -13,19 +33,6 @@ h2 {
   font-size: 1.4em;
 }
 
-main {
-  display: flex;
-  background-color: #000000;
-  max-width: 768px;
-  min-height: 480px;
-  margin: 1em auto;
-  border-color: #eeeeee;
-  border-width: 1em;
-  border-style: solid;
-  align-content: space-between;
-  box-sizing: border-box;
-}
-
 .details {
   display: block;
   padding: 1em;
@@ -34,15 +41,12 @@ main {
 
 .photo {
   display: block;
-  width: 325px;
+  width: 370px;
   height: 400px;
-  align-self: flex-end;
-  flex: none;
 }
 
 .talks {
   padding: 1em;
-  flex-wrap: wrap;
 }
 
 .talk {
@@ -74,6 +78,13 @@ a:hover {
 
 a:active {
   color: #000000;
+}
+
+@media screen and (max-width: 480px) {
+  .vcard, .talks {
+    margin: 0;
+    border-width: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
