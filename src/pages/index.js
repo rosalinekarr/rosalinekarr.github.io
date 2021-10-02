@@ -1,9 +1,15 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import "../main.css"
 
 export default function Home() {
   return (
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rose Karr</title>
+        <link rel="canonical" href="https://www.rosalinekarr.com" />
+      </Helmet>
       <div className="vcard">
         <div className="details">
           <h1 className="n">

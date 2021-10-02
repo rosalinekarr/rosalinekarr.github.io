@@ -1,9 +1,15 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import "../main.css"
 
 export default function Talks() {
   return (
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rose Karr's Talks</title>
+        <link rel="canonical" href="https://www.rosalinekarr.com/talks" />
+      </Helmet>
       <div className="talks">
         <a className="talk" href="/talks/agile_on_the_edge.pdf">
           <img className="talk-preview" src="/talks/agile_on_the_edge_preview.png" alt="Agile on the Edge: Building Projects with Cutting Edge Technology Using Agile Methodology" />
