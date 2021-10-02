@@ -1,12 +1,13 @@
 html, body, main {
   background-color: #000000;
   display: flex;
-  width: 100%;
+  max-width: 768px;
   min-height: 100%;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-family: Courier, monospace;
   font-size: 1em;
   color: #eeeeee;
@@ -14,8 +15,7 @@ html, body, main {
 
 .vcard, .talks {
   display: flex;
-  max-width: 768px;
-  margin: 1em;
+  margin: 3em 1em;
   border-color: #eeeeee;
   border-width: 1em;
   border-style: solid;
@@ -23,6 +23,10 @@ html, body, main {
   justify-content: center;
   box-sizing: border-box;
   flex-wrap: wrap;
+}
+
+.back-button {
+  margin: 0 0 3em 0;
 }
 
 h1 {
@@ -83,11 +87,20 @@ a:active {
 @media screen and (max-width: 480px) {
   .vcard, .talks {
     margin: 0;
+    padding: 0px;
     border-width: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .vcard, .talks {
+    margin: 1em;
+  }
+
+  .back-button {
+    margin: 0 0 1em 0;
+  }
+
   .talk {
     flex-direction: column;
   }

@@ -26,6 +26,7 @@ export default function Talks() {
           Texting with Javascript
         </a>
       </div>
+      <a className="back-button" href="/">← Back</a>
     </main>
   )
 }
