@@ -11,6 +11,7 @@ export default function Home() {
         <link rel="canonical" href="https://www.rosalinekarr.com" />
       </Helmet>
       <div className="vcard">
+        <img className="photo" src="rose.jpg" alt="Rose" />
         <div className="details">
           <h1 className="n">
             <span className="given-name">Rosaline</span>{" "}
@@ -33,7 +34,6 @@ export default function Home() {
             LinkedIn
           </a>
         </div>
-        <img className="photo" src="rose.jpg" alt="Rose" />
       </div>
     </main>
   )
